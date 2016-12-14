@@ -24,7 +24,6 @@ app.controller('QuizController', function($scope) {
 	$scope.nextQuestion = function () {
 		$scope.questionText = $scope.data.questions[$scope.quesNumber].name;
 		$scope.answers = $scope.data.questions[$scope.quesNumber].answers;
-        $scope.isError = true;
         $scope.quesNumber = $scope.quesNumber + 1;
     }
 
